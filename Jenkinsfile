@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                bat 'gradlew clean build'                
             }
         }
         stage('Test') {
@@ -16,6 +17,13 @@ pipeline {
             steps {
                 echo 'Deploying....'
             }
+        }
+        
+    }
+    post {
+        always {
+            archive "target/**/*"
+            junit 'target/surefire-reports/*.xml'
         }
     }
 }
