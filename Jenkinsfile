@@ -24,6 +24,8 @@ pipeline {
         always {
             archive "target/**/*"
             junit 'build/test-results/test/*.xml'
+            
+            jacoco buildOverBuild: true
         }
     }
 }
