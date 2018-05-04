@@ -23,7 +23,7 @@ pipeline {
     post {
         always {
             archive "target/**/*"
-            junit 'target/surefire-reports/*.xml'
+            junit 'build/test-results/test/*.xml'
         }
     }
 }
