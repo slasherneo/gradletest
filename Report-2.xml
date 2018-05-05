@@ -7,7 +7,7 @@
   <test name="/file_2/test_0" executed="yes">
     <description><![CDATA[This is the description of the test number 0 member of the 2 file.]]></description>
     <result>
-      <success passed="false" state="100" />
+      <success passed="false" state="50" />
       <executiontime unit="ms" mesure="1.135526693684712" isRelevant="false" />
        <errorlog></errorlog>      
     </result>
@@ -15,7 +15,7 @@
   <test name="/file_2/test_1" executed="yes">
     <description><![CDATA[This is the description of the test number 1 member of the 2 file.]]></description>
     <result>
-      <success passed="yes" state="100"  />
+      <success passed="yes" state="70"  />
       <executiontime unit="ms" mesure="1.135526693684712" isRelevant="false" />
       <errorlog></errorlog>
     </result>
