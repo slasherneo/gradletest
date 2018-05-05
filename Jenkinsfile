@@ -5,13 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat 'gradlew clean build'                
+                bat 'gradlew clean build'
+                
+                openTasks canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', high: 'FIXME', low: '', normal: 'TODO', pattern: '**/*java', unHealthy: ''                
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-                build job: 'CheckTODO' 
+                echo 'Testing..'                
             }
         }
         stage('Deploy') {
