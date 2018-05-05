@@ -12,7 +12,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'                
+            	build job : 'FunctionalTest'
+                echo 'Testing..'   
+                bat 'java -jar D:\\JenkinsWorkspace\\workspace\\FunctionalTest\\build\\libs\\FunctionJar.jar "D:\\JenkinsWorkspace\\workspace\\ReggiePip"'             
             }
         }
         stage('Deploy') {
@@ -27,7 +29,7 @@ pipeline {
             archive "build/test-results/test/**/*"
             junit 'build/test-results/test/*.xml'            
             
-            perfpublisher healthy: '', metrics: '', name: '**/*Report-2.xml', threshold: '', unhealthy: ''
+            perfpublisher healthy: '', metrics: '', name: '**/*functional_test.xml', threshold: '', unhealthy: ''
             
             jacoco buildOverBuild: true
         }
