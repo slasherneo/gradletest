@@ -8,6 +8,7 @@
     <description><![CDATA[This is the description of the test number 0 member of the 2 file.]]></description>
     <result>
       <success passed="false" state="100" />
+      <executiontime unit="ms" mesure="1.135526693684712" isRelevant="false" />
        <errorlog></errorlog>      
     </result>
   </test>
@@ -15,6 +16,7 @@
     <description><![CDATA[This is the description of the test number 1 member of the 2 file.]]></description>
     <result>
       <success passed="yes" state="100"  />
+      <executiontime unit="ms" mesure="1.135526693684712" isRelevant="false" />
       <errorlog></errorlog>
     </result>
   </test>
