@@ -31,6 +31,8 @@ public class Tesla {
 		return price;
 	}
 	
+	//FIX there was bugs
+	
 	
 	public String getCeo() {
 		return ceo;
@@ -51,5 +53,5 @@ public class Tesla {
 		this.price = price;
 	}
 	
-	
+	//TODO Add Autopilot
 }

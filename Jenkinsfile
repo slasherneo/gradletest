@@ -22,9 +22,8 @@ pipeline {
     }
     post {
         always {
-            archive "target/**/*"
-            junit 'build/test-results/test/*.xml'
-            junit 'build/test-results/test/*.xml'
+            archive "build/test-results/test/**/*"
+            junit 'build/test-results/test/*.xml'            
             
             jacoco buildOverBuild: true
         }
