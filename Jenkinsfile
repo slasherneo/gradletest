@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                build job 'CheckTODO' 
+                build job: 'CheckTODO' 
             }
         }
         stage('Deploy') {
