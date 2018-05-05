@@ -31,7 +31,7 @@ public class Tesla {
 		return price;
 	}
 	
-	//FIX there was bugs
+	//FIXME there was bugs
 	
 	
 	public String getCeo() {
