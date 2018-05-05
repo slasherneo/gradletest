@@ -27,6 +27,8 @@ pipeline {
             archive "build/test-results/test/**/*"
             junit 'build/test-results/test/*.xml'            
             
+            perfpublisher healthy: '', metrics: '', name: '**/*Report-2.xml', threshold: '', unhealthy: ''
+            
             jacoco buildOverBuild: true
         }
     }
